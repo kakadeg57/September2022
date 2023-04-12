@@ -21,7 +21,7 @@ public static void init()
 {
 	prop = new Properties();
 	try {
-	FileInputStream file = new FileInputStream("C:\\Users\\Lenovo\\eclipse-workspace\\AutomationTestingSeptemberBatch\\configuration.properties");
+	FileInputStream file = new FileInputStream("C:\\Users\\Admin\\eclipse-workspace\\September2022\\configuration.properties");
 	prop.load(file);
 	}
 	catch(Exception e)
@@ -31,7 +31,7 @@ public static void init()
 	
 	if(prop.getProperty("browser").equalsIgnoreCase("chrome"))
 	{
-	System.setProperty("webdriver.chrome.driver", "D:\\Software\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", "D:\\Java Software\\chromedriver_win32 (1)\\chromedriver.exe");
 	driver  = new ChromeDriver();
 	}
 	else if(prop.getProperty("browser").equalsIgnoreCase("firefox")) 

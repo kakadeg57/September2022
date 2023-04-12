@@ -9,9 +9,9 @@ import org.testng.annotations.Test;
 import crmbase.TestBase;
 import crmpages.LoginPage;
 
-public class LoginPageTest extends TestBase
-{
-  LoginPage loginPage ;
+public class LoginPageTest extends TestBase{
+
+	LoginPage loginPage ;
 	
 	@BeforeMethod
 	public void initialization() 
